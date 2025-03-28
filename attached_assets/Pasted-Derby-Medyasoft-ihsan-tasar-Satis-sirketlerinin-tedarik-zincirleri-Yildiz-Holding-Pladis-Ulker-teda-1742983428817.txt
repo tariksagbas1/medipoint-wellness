@@ -1,0 +1,158 @@
+Derby 
+Medyasoft ihsan tasar
+Satis sirketlerinin tedarik zincirleri Yildiz Holding
+Pladis Ulker tedarik zincirleri 
+KAHVALTILIKLAR Peynir Tabağı 350
+Söğüş Tabağı 185
+Fit Pancake 325
+Express Kahvaltı 500
+Sahanda Yumurta 180
+Karamelize Soğanlı Omlet 250
+Sahanda Sucuklu Yumurta 280
+Sahanda Sucuk 250
+Sade Omlet 240
+Kaşarlı Omlet 270
+Peynirli Omlet 270
+Sucuklu Omlet 300
+Wellness Sporcu Omlet 280
+Menemen 240
+Kaşarlı Menemen 260
+Sucuklu Menemen 310
+
+TOSTLAR
+Kavurmalı Kaşarlı Bazlama Tost 350
+Karışık Bazlama Tost 340
+Kaşarlı Bazlama Tost 240
+Kaşarlı Tost 220
+Sucuklu Tost 290
+Kavurmalı Kaşarlı Tost 350
+
+GLUTENSIZ YEMEKLER
+Avokado Scramble 390
+Ekmek Üstü Somon 420
+
+SANDVİÇLER
+Somon Füme Sandviç 390
+Beyaz Peynirli Sandviç 190
+Kaşar Peynirli Sandviç 190
+Izgara Tavuklu Sandviç 310
+Ton Balıklı Sandviç 250
+
+BOWLLAR Sporcu Bowl 490
+Fit Bowl 470
+Tahıllı Bowl 440
+Bomb Bowl 470
+Burger Bowl 550
+Kahvaltı Bowl 460
+Burrito Bowl 495
+Teriyaki Somon Bowl 590
+Mücver Bowl 410
+
+BURGERLER Tavuk Burger 395
+Klasik Hamburger 495
+Cheeseburger 510
+
+MAKARNALAR
+Fettuccine Alfredo 395
+Fettuccine Sebzeli 360
+Penne Arabiata 350
+General Tso Tavuk Noodle 420
+Köfteli Spaghetti 440
+
+WRAPLER Sebzeli Wrap 370
+Tavuklu Wrap 420
+
+SALATALAR Kinoa Salatası 350
+Çıtır Tavuk Salatası 390
+Ton Balıklı Salata 390
+Sezar Salata 390
+
+PİZZALAR Margherita Pizza 390
+Sucuk Sever Pizza 440
+Anadolu Ateşi Pizza 470
+
+GRANOLALAR Meyveli Glutensiz Granola 270
+Granola 260
+
+TATLILAR
+Limonlu Cheesecake 250
+Frambuazlı Cheesecake 250
+San Sebastian 250
+Pekmezli Kurabiye 50
+Karamelize Soğanlı Kurabiye 40
+Fındıklı Kurabiye 30
+Kakaolu Kurabiye 30
+Peynirli Dereotlu Anne Poğaçası 45
+
+SICAK KAHVELER Latte 195
+Latte Macchiato 195
+Zerdeçallı Latte 230
+Cappuccino 195
+Affagato 210
+Americano 180
+Cortado 180
+Flat White 195
+Mocha 210
+Espresso 150
+Espresso Double 170
+Chai Tea Latte 165
+Chemex 390
+Syphon Demleme Kahve 340
+Filtre Kahve 175
+Türk Kahvesi 145
+Double Türk Kahvesi 200
+Cafe Meil 200
+Filtre Kahve V60 390
+
+SOĞUK KAHVELER
+Ice Latte 185
+Ice Mocha 230
+Frappe 185
+Ice Americano 195
+Ice Cookie Latte 250
+Ice Filtre Kahve 190
+
+MEDIPOINT SMOOTHIELER
+Çilekli Smoothie 190
+Muzlu Smoothie 190
+Avokado Smoothie 210
+Atom Smoothie 230
+
+DOĞAL BİTKİ ÇAYLARI Ihlamur 150
+Yeşil Çay 150
+Nane Limon 150
+Papatya Çayı 150
+Melisa Çayı 150
+Kış Çayı 150
+Kuşburnu Çayı 150
+Detox Çayı 170
+Ada Çayı 150
+Blue Butterfly 170
+Çay 40
+Fincan Çay 60
+Salep 165
+
+VİTAMİN BAR
+Portakal Suyu 150
+Elma Suyu 145
+Havuç Suyu 145
+Yeşil Detox 180
+Sarı Detox 180
+
+FROZENLAR
+Tüm hepsinin fiyatı 180 olsun
+
+MİLKSHAKE 
+tüm hepsinin fiyatı 190 olsun
+
+İÇECEKLER kola 90
+kola zero 90
+fanta 90
+sprite 90
+icetea 90
+beypazarı soda 60
+ayran 80
+su 50
+
+
+ 
