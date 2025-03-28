@@ -69,13 +69,13 @@ h2 {
 
 .navbar {
   background: transparent;
-  padding: 0.5rem;
+  padding: 1rem; /* Adjusted padding */
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px var(--shadow-color);
+  box-shadow: none;
   margin-bottom: 1rem;
   overflow-x: auto;
   white-space: nowrap;
@@ -84,6 +84,9 @@ h2 {
   margin-right: calc(-50vw + 50%);
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 4rem; /* Increased height */
+  display: flex;
+  align-items: center;
 }
 
 .navbar::-webkit-scrollbar {
@@ -93,17 +96,22 @@ h2 {
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 0.3rem 0.5rem;
+  padding: 0.6rem 1rem; /* Increased padding */
   margin: 0 0.2rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  border-radius: 30px; /* Increased border radius */
+  font-size: 1rem; /* Increased font size */
   background-color: var(--secondary-color);
 }
 
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid to fit items dynamically */
   gap: 0.5rem;
+  justify-content: start; /* Align items to the start to avoid gaps */
+  overflow-x: hidden;
+  width: 100%; /* Ensure the container spans the full width */
+  margin: 0; /* Remove any unintended margins */
+  padding: 0; /* Remove any unintended padding */
 }
 
 .menu-item {
@@ -112,6 +120,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 4px 6px var(--shadow-color);
   transition: transform 0.2s;
+  position: relative; /* Make the menu item a positioned container */
 }
 
 .menu-item:hover {
@@ -119,13 +128,20 @@ h2 {
 }
 
 .menu-item img {
-  width: 100%;
-  height: 200px;
+  width: 180px; /* Increased width */
+  height: 180px; /* Increased height */
   object-fit: cover;
+  margin-bottom: 0.5rem; /* Add consistent spacing below the image */
 }
 
 .item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  height: auto; /* Allow flexibility if needed */
   padding: 1rem;
+  padding-bottom: 1rem; /* Add padding to ensure consistent spacing */
+  margin-top: -0.5rem; /* Bring the details section closer to the image */
 }
 
 .item-details p {
@@ -133,8 +149,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem; /* Reduced font size */
+  margin-bottom: 1rem; /* Increase spacing below the title */
+  margin-top: -0.5rem; /* Add negative margin to bring the title closer to the image */
 }
 
 p {
@@ -144,10 +161,12 @@ p {
 }
 
 .price {
+  position: absolute; /* Position the price relative to the menu item */
+  bottom: 5px; /* Move the price slightly lower */
+  left: 1rem; /* Optional: Align price to the left */
   font-weight: 600;
   color: var(--text-color);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .item-actions {
