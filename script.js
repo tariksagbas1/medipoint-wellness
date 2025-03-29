@@ -55,7 +55,7 @@ const menuData = [
       },
       {
         name: 'Glutensiz Tavuklu Wrap',
-        description: 'Salata, fırında patates ile (Çölyak hastaları için uygun değildir.)',
+        description: '200gr tavuk. Salata, fırında patates ile (Çölyak hastaları için uygun değildir.)',
         price: '450',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66245342.jpg??width=400'
       },
@@ -67,37 +67,37 @@ const menuData = [
       },
       {
         name: 'Glutensiz Sucuk Sever Pizza',
-        description: 'Mozzarella peyniri, dana eti, mısır, sucuk',
+        description: 'Mozzarella peyniri, dana eti, mısır, 80gr 100% dana eti Kayseri sucuk',
         price: '450',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66970450.jpg??width=400'
       },
       {
         name: 'Glutensiz Anadolu Ateşi Pizza (22 cm)',
-        description: 'Pizza tabanı; pizza sosu, mozzarella peyniri, 70 gr. dana kavurma, renkli biber',
+        description: 'Pizza tabanı; pizza sosu, mozzarella peyniri, 80 gr. dana kavurma, renkli biber',
         price: '500',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66970465.jpg??width=400'
       },
       {
         name: 'Glutensiz Karabuğday Tavuk Burger',
-        description: 'Izgara tavuk, karamelize soğan, cheddar peyniri, domates, salatalık turşusu',
+        description: '100gr Izgara tavuk, karamelize soğan, cheddar peyniri, domates, salatalık turşusu',
         price: '450',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67510776.jpg??width=400'
       },
       {
-        name: 'Margherita Pizza (Glutensiz)',
+        name: 'Glutensiz Margherita Pizza',
         description: 'Domates sosu, mozzarella peyniri, fesleğen',
         price: '350',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66969940.jpg??width=400'
       },
       {
         name: 'Glutensiz Karabuğday Sucuklu 3 Peynirli Tost',
-        description: 'Glutensiz karabuğday ekmeğine; sucuk, İzmir tulum peyniri, beyaz peynir',
+        description: 'Glutensiz karabuğday ekmeğine; 45gr 100% dana eti Kayseri sucuk, İzmir tulum peyniri, beyaz peynir',
         price: '360',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67626100.jpg??width=400'
       },
       {
         name: 'Glutensiz Kavurmalı Kaşar Peynirli Tost',
-        description: 'Glutensiz karabuğday ekmeğine; dana kavurma, kaşar peyniri. Salata ile',
+        description: 'Glutensiz karabuğday ekmeğine; 80gr dana kavurma, kaşar peyniri. Salata ile',
         price: '360',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/69254324.jpg??width=400'
       },
@@ -232,7 +232,7 @@ const menuData = [
       },
       {
         name: 'Sucuklu Menemen',
-        description: '',
+        description: 'Taze domates ile 45gr. 100% dana eti Kayseri sucuk',
         price: '310',
         photo_url: ''
       },
@@ -255,10 +255,22 @@ const menuData = [
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27795536.jpg??width=400'
       },
       {
+        name: 'Sahanda Kavurmalı Yumurta',
+        description: '2 adet yumurta, 60gr. saf dana kavurma',
+        price: '220',
+        photo_url: ''
+      },
+      {
         name: 'Sade Omlet',
         description: 'Organik gezen tavuk yumurtası, nefis tereyağı, Cherry domates, salatalık',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27795577.jpg??width=400'
+      },
+      {
+        name: 'Kavurmalı Omlet',
+        description: '2 adet yumurta ve 60gr saf dana kavurma ile omlet',
+        price: '220',
+        photo_url: ''
       },
       {
         name: 'Peynirli Omlet',
@@ -310,13 +322,13 @@ const menuData = [
       },
       {
         name: 'Sahanda Sucuklu Yumurta',
-        description: 'Tek kişilik',
+        description: 'Tek kişilik. 45gr sucuk',
         price: '290',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/43634608.jpg??width=800'
       },
       {
         name: 'Yumurtalı Sucuklu Omlet',
-        description: 'Kayseri sucuğu, yumurta. Domates, salatalık, mevsim yeşillikleri ile',
+        description: '45gr 100% dana eti Kayseri sucuğu, yumurta. Domates, salatalık, mevsim yeşillikleri ile',
         price: '290',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66231015.jpg??width=800'
       },
@@ -328,7 +340,7 @@ const menuData = [
       },
       {
         name: 'Organik Yumurtalı Kavurmalı Omlet',
-        description: 'Organik yumurta, dana kavurma. Salatalık, domates ile',
+        description: 'Organik yumurta, 80gr dana kavurma. Salatalık, domates ile',
         price: '280',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/69247056.jpg??width=800'
       }
@@ -339,13 +351,13 @@ const menuData = [
     items: [
       {
         name: 'Sezar Salata',
-        description: 'Izgara tavuk parçaları, göbek marul, kruton, parmesan',
+        description: '200gr ızgara tavuk parçaları, göbek marul, kruton, parmesan',
         price: '350',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27797227.jpg??width=400'
       },
       {
         name: 'Ton Balıklı Salata',
-        description: 'Ton balığı, marul, domates, salatalık, zeytinyağı',
+        description: '160gr ton balığı, marul, domates, salatalık, zeytinyağı',
         price: '330',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/30227790.jpg??width=400'
       },
@@ -380,7 +392,7 @@ const menuData = [
       },
       {
         name: 'Fettuccine Alfredo',
-        description: 'Tavuk parçaları, krema, mantar, taze fesleğen',
+        description: '150gr tavuk parçaları, krema, mantar, taze fesleğen',
         price: '450',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/30232311.jpg??width=800'
       },
@@ -409,7 +421,7 @@ const menuData = [
       },
       {
         name: 'Tavuk Burger',
-        description: 'Izgara tavuk, cheddar peyniri, karamelize soğan, domates, salatalık turşusu, marul',
+        description: '100gr Izgara tavuk, cheddar peyniri, karamelize soğan, domates, salatalık turşusu, marul',
         price: '400',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67510753.jpg??width=800'
       }
@@ -420,7 +432,7 @@ const menuData = [
     items: [
       {
         name: 'Sporcu Bowl',
-        description: 'Jasmin pirinç, jülyen kesim tavuk, avakado, sebze mix',
+        description: 'Jasmin pirinç, 200gr jülyen kesim tavuk, avakado, sebze mix',
         price: '400',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/39849728.jpg??width=800'
       },
@@ -444,7 +456,7 @@ const menuData = [
       },
       {
         name: 'Teriyaki Somon Bowl',
-        description: 'Krema, teriyaki sos, somon, siyah pirinç pilavı, sote karnabahar ve brokoli',
+        description: 'Krema, teriyaki sos, 170gr somon, siyah pirinç pilavı, sote karnabahar ve brokoli.',
         price: '500',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/63957582.jpg??width=800'
       },
@@ -456,7 +468,7 @@ const menuData = [
       },
       {
         name: 'Burrito Bowl',
-        description: 'Siyah pirinç pilavı, kızarmış tavuk dilimleri, mısır, Meksika fasulyesi, avokado',
+        description: 'Siyah pirinç pilavı, 200gr kızarmış tavuk dilimleri, mısır, Meksika fasulyesi, avokado',
         price: '410',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/64598567.jpg??width=800'
       },
@@ -485,7 +497,7 @@ const menuData = [
     items: [
       {
         name: 'Tavuklu Wrap',
-        description: 'Tam buğday tortilla, renkli biber, mısır, cheddar peyniri, tavuk',
+        description: 'Tam buğday tortilla, renkli biber, mısır, cheddar peyniri, 200gr tavuk',
         price: '350',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27797470.jpg??width=800'
       },
@@ -501,20 +513,20 @@ const menuData = [
     name: 'Sandviçler',
     items: [
       {
-        name: 'Ton Balıklı Rokalı Sandviç',
-        description: 'Nefis sandviç ekmeğine; dereotu, domates, Mevsim yeşilliği, ton balığı',
+        name: 'Ton Balıklı Sandviç',
+        description: 'Nefis sandviç ekmeğine; dereotu, domates, Mevsim yeşilliği, 160gr ton balığı',
         price: '230',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27796552.jpg??width=800'
       },
       {
         name: 'Izgara Tavuklu Sandviç',
-        description: 'Nefis sandviç ekmeğine; ızgara tavuk but',
+        description: 'Nefis sandviç ekmeğine 200gr ızgara tavuk but',
         price: '300',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27796905.jpg??width=800'
       },
       {
         name: 'Somon Füme Sandviç',
-        description: 'Nefis sandviç ekmeğine; füme somon, roka, turşu, kırmızı soğan',
+        description: 'Nefis sandviç ekmeğine; 80gr füme somon, roka, turşu, kırmızı soğan',
         price: '360',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/30220502.jpg??width=800'
       },
@@ -543,7 +555,7 @@ const menuData = [
       },
       {
         name: 'Bazlama Ekmeğine Karışık Tost',
-        description: 'Nefis bazlama ekmeği, acuka, taze kaşar peyniri, dana eti, Kayseri sucuğu',
+        description: 'Nefis bazlama ekmeği, acuka, taze kaşar peyniri, 45gr dana eti Kayseri sucuğu',
         price: '250',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/32569942.jpg??width=800'
       },
@@ -561,13 +573,13 @@ const menuData = [
       },
       {
         name: 'Karışık Tost',
-        description: 'Sucuk, kaşar peyniri',
+        description: '45gr 100% dana Kayseri sucuk, kaşar peyniri',
         price: '290',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/43734250.jpg??width=800'
       },
       {
         name: 'Kavurmalı Kaşarlı Bazlama Tost',
-        description: 'Bazlama ekmeğine; acuka, dana kavurma, kaşar peyniri. Salata ile',
+        description: 'Bazlama ekmeğine; acuka, 80gr dana kavurma, kaşar peyniri. Salata ile',
         price: '260',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/69255102.jpg??width=800'
       }
@@ -619,19 +631,19 @@ const menuData = [
     items: [
       {
         name: 'Sarı Detox',
-        description: 'Limon, portakal, dereotu, salatalık',
+        description: 'Limon, portakal, dereotu, salatalık. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801136.jpg??width=800'
       },
       {
         name: 'Turuncu Detox',
-        description: 'Portakal suyu, havuç suyu, taze zencefil, limon',
+        description: 'Portakal suyu, havuç suyu, taze zencefil, limon. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801157.jpg??width=800'
       },
       {
         name: 'Yeşil Detox',
-        description: 'Elma, salatalık, maydanoz, taze zencefil',
+        description: 'Elma, salatalık, maydanoz, taze zencefil. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801448.jpg??width=800'
       },
@@ -655,25 +667,25 @@ const menuData = [
       },
       {
         name: 'Limonata',
-        description: 'Limon, su, şeker',
+        description: 'Limon, su, şeker. 330ml',
         price: '110',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/43387570.jpg??width=800'
       },
       {
         name: 'Naneli Limonata',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 330ml',
         price: '130',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963850.jpg??width=800'
       },
       {
         name: 'Çilekli Limonata',
-        description: 'Çilek püresi, limonata',
+        description: 'Çilek püresi, limonata. 330ml',
         price: '130',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963883.jpg??width=800'
       },
       {
         name: 'Elmalı Limonata',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 330ml',
         price: '130',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66966582.jpg??width=800'
       }
@@ -814,37 +826,37 @@ const menuData = [
     items: [
       {
         name: 'Frappe',
-        description: '',
+        description: '350ml',
         price: '185',
         photo_url: ''
       },
       {
         name: 'Ice Filtre Kahve',
-        description: '',
+        description: '350ml',
         price: '190',
         photo_url: 'https://cdn.tgoapps.com/mnresize/384/-/tgo2/spm/prod/meal/media/images/product/154388/4010259_1723647028182.jpg'
       },
       {
         name: 'Iced Americano',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '130',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27798450.jpg??width=800'
       },
       {
         name: 'Iced Latte',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '160',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27798474.jpg??width=800'
       },
       {
         name: 'Iced Mocha',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27798488.jpg??width=800'
       },
       {
         name: 'Iced Cookie Latte',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '200',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27798499.jpg??width=800'
       }
@@ -855,25 +867,25 @@ const menuData = [
     items: [
       {
         name: 'Avokado Smoothie',
-        description: 'Avokado, mango, süt, yoğurt',
+        description: 'Avokado, mango, süt, yoğurt. 350ml',
         price: '220',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801755.jpg??width=800'
       },
       {
         name: 'Atom Smoothie',
-        description: 'Muz, bal, ceviz, süt, yoğurt',
+        description: 'Muz, bal, ceviz, süt, yoğurt. 350ml',
         price: '240',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27802079.jpg??width=800'
       },
       {
         name: 'Çilekli Smoothie',
-        description: 'Çilek püresi, süt, yoğurt',
+        description: 'Çilek püresi, süt, yoğurt. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67328110.jpg??width=800'
       },
       {
         name: 'Muzlu Smoothie',
-        description: 'Muz, bal, süt yoğurt',
+        description: 'Muz, bal, süt yoğurt. 350ml',
         price: '200',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67333813.jpg??width=800'
       }
@@ -884,37 +896,37 @@ const menuData = [
     items: [
       {
         name: 'Çilekli Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27800017.jpg??width=800'
       },
       {
         name: 'Mango Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66881307.jpg??width=800'
       },
       {
         name: 'Muzlu Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66883998.jpg??width=800'
       },
       {
         name: 'Karpuzlu Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963749.jpg??width=800'
       },
       {
         name: 'Elmalı Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963790.jpg??width=800'
       },
       {
         name: 'Kivili Frozen',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '170',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963812.jpg??width=800'
       }
@@ -925,25 +937,25 @@ const menuData = [
     items: [
       {
         name: 'Çilekli Milkshake',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27800824.jpg??width=800'
       },
       {
         name: 'Çikolatalı Milkshake',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/48438160.jpg??width=800'
       },
       {
         name: 'Muzlu Milkshake',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '180',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963908.jpg??width=800'
       },
       {
         name: 'Karamelli Milkshake',
-        description: 'Soğuk servis edilir.',
+        description: 'Soğuk servis edilir. 350ml',
         price: '160',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67309413.jpg??width=800'
       }
@@ -954,79 +966,79 @@ const menuData = [
     items: [
       {
         name: 'Melisa Çayı',
-        description: '',
+        description: '330ml',
         price: '150',
         photo_url: ''
       },
       {
         name: 'Çay',
-        description: '',
+        description: '130ml',
         price: '40',
         photo_url: 'https://img.odatv.com/rcman/Cw1280h720q95gc/storage/files/images/2024/11/10/bir-bardak-cay-250-lira-oldu-09bn.png'
       },
       {
         name: 'Fincan Çay',
-        description: '',
+        description: '330ml',
         price: '60',
         photo_url: 'https://lh6.googleusercontent.com/proxy/QPujk4KomY462NwBFBRTPNfGqpKrNrMhJLoT-RDHKXbMpwQ1qQoBsnQYNPpKqMsO6fdZ7DlizcQtfX77yHYLIZMGq1f2_3J3id0zAqVz57CzYUVTVhaoAfvxlX2AZw'
       },
       {
         name: 'Blue Butterfly',
-        description: 'İsteğe göre esmer şeker veya bal, limon',
+        description: 'İsteğe göre esmer şeker veya bal, limon. 330ml',
         price: '160',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68619681.jpg??width=800'
       },
       {
         name: 'Ada Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628865.jpg??width=800'
       },
       {
         name: 'Detox Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '160',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628879.jpg??width=800'
       },
       {
         name: 'Ihlamur',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628884.jpg??width=800'
       },
       {
         name: 'Kış Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628888.jpg??width=800'
       },
       {
         name: 'Kuşburnu Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628902.jpg??width=800'
       },
       {
         name: 'Nane Limon Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628905.jpg??width=800'
       },
       {
         name: 'Papatya Çayı',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628908.jpg??width=800'
       },
       {
         name: 'Yeşil Çay',
-        description: 'Sıcak servis edilir.',
+        description: 'Sıcak servis edilir. 330ml',
         price: '150',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68628919.jpg??width=800'
       },
       {
         name: 'Avokadolu Karışık Çay',
-        description: 'Avokado, kiraz şapı, mısır püskülü, papatya, funda, ardıç',
+        description: 'Avokado, kiraz şapı, mısır püskülü, papatya, funda, ardıç. 330ml',
         price: '160',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68630475.jpg??width=800'
       }
@@ -1037,13 +1049,13 @@ const menuData = [
     items: [
       {
         name: 'Fanta',
-        description: 'Kutu içecek',
+        description: 'Kutu içecek. 330ml',
         price: '90',
         photo_url: 'https://images.migrosone.com/sanalmarket/product/08011004/8011004_yan-7d2460-1650x1650.png'
       },
       {
         name: 'Sprite',
-        description: 'Kutu içecek',
+        description: 'Kutu içecek. 330ml',
         price: '90',
         photo_url: 'https://images.migrosone.com/sanalmarket/product/08030000/08030000_1-881eaf-1650x1650.png'
       },
@@ -1054,38 +1066,38 @@ const menuData = [
         photo_url: 'https://images.migrosone.com/macrocenter/product/46054715/46054715-8a2faf-8a2faf-1650x1650.jpg'
       },
       {
-        name: 'Coca-Cola Zero Sugar (33 cl.)',
-        description: 'Kutu içecek',
+        name: 'Coca-Cola Zero Sugar',
+        description: 'Kutu içecek. 330ml',
         price: '70',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27798584.jpg??width=800'
       },
       {
-        name: 'Coca-Cola (33 cl.)',
+        name: 'Coca-Cola',
         description: 'Kutu içecek',
         price: '70',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27799234.jpg??width=800'
       },
       {
-        name: 'Soda (20 cl.)',
-        description: 'Cam şişe',
+        name: 'Soda',
+        description: 'Cam şişe. 200ml',
         price: '45',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/40312521.jpg??width=800'
       },
       {
-        name: 'Fuse Tea Limon (33 cl.)',
-        description: 'Kutu içecek',
+        name: 'Fuse Tea Limon',
+        description: 'Kutu içecek. 330ml',
         price: '70',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68144225.jpg??width=800'
       },
       {
-        name: 'Fuse Tea Şeftali (33 cl.)',
-        description: 'Kutu içecek',
+        name: 'Fuse Tea Şeftali',
+        description: 'Kutu içecek. 330ml',
         price: '70',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68144232.jpg??width=800'
       },
       {
-        name: 'Su (50 cl.)',
-        description: 'Cam şişe',
+        name: 'Su',
+        description: 'Cam şişe. 330ml',
         price: '40',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/68144240.jpg??width=800'
       }

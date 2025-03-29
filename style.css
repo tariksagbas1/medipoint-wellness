@@ -78,6 +78,7 @@ h2 {
   box-shadow: none;
   margin-bottom: 1rem;
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -87,6 +88,7 @@ h2 {
   height: 4rem; /* Increased height */
   display: flex;
   align-items: center;
+  overscroll-behavior: contain;
 }
 
 .navbar::-webkit-scrollbar {
@@ -297,4 +299,9 @@ p {
 
 .menu-item {
   cursor: pointer;
+}
+.subheading {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 5px;
 }
