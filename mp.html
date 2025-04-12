@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medipoint Wellness Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e9ffe9; /* Light green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu-container {
+            max-width: 900px;
+            border: 2px solid #000000; /* Black border */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-family: 'Oswald';
+            color: #275f06; /* Dark green */
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .menu-header img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            font-size: 1.5em;
+            color: #176b19; /* Black for categories */
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2fad3; /* Light green underline */
+            padding-bottom: 5px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1em;
+            color: #2c3c1f; /* Dark green */
+        }
+
+        .menu-item span:first-child {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .menu-item span:last-child {
+            color: #479947; /* Pistachio light green for prices */
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #002017; /* Dark green */
+        }
+
+        @media (max-width: 768px) {
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Menü</h1>
+        </div>
+
+        <div class="menu-section">
+            <h2>Glutensiz Yemekler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Glutensiz Domates Soslu Fusilli Makarna</span><span>390₺</span></div>
+                <div class="menu-item"><span>Somon Bruschetta</span><span>350₺</span></div>
+                <div class="menu-item"><span>Avokado Scramble</span><span>390₺</span></div>
+                <div class="menu-item"><span>Glutensiz Hamburger</span><span>530₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday 3 Peynirli Tost</span><span>330₺</span></div>
+                <div class="menu-item"><span>Glutensiz Cheeseburger</span><span>550₺</span></div>
+                <div class="menu-item"><span>Glutensiz Sebzeli Humus Bowl</span><span>450₺</span></div>
+                <div class="menu-item"><span>Glutensiz Tavuklu Wrap</span><span>450₺</span></div>
+                <div class="menu-item"><span>Glutensiz Lahmacun</span><span>330₺</span></div>
+                <div class="menu-item"><span>Glutensiz Sucuk Sever Pizza</span><span>460₺</span></div>
+                <div class="menu-item"><span>Glutensiz Anadolu Ateşi Pizza</span><span>490₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday Tavuk Burger</span><span>500₺</span></div>
+                <div class="menu-item"><span>Glutensiz Margherita Pizza</span><span>410₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday Sucuklu 3 Peynirli Tost</span><span>380₺</span></div>
+                <div class="menu-item"><span>Glutensiz Kavurmalı Kaşar Peynirli Tost</span><span>395₺</span></div>
+                <div class="menu-item"><span>4 Peynirli Karabuğdaylı Brioche Sandviç</span><span>250₺</span></div>
+                <div class="menu-item"><span>Doğal Akçaağaç Şuruplu Karabuğday Pancake</span><span>420₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Glutensiz Ürünler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Karabuğday Cookie Ice Latte (Glutensiz)</span><span>280₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday Simit</span><span>170₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday Açma</span><span>170₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğday Anne Poğaçası</span><span>170₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğdaylı Chocolate Cookie</span><span>190₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğdaylı Tahinli Çörek</span><span>230₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğdaylı Kakaolu Cevizli Kurabiye</span><span>200₺</span></div>
+                <div class="menu-item"><span>Glutensiz Ay Çekirdekli Tuzlu Kurabiye</span><span>190₺</span></div>
+                <div class="menu-item"><span>Glutensiz Tahinli Kurabiye</span><span>200₺</span></div>
+                <div class="menu-item"><span>Glutensiz Badem Unlu Amaretti</span><span>240₺</span></div>
+                <div class="menu-item"><span>Glutensiz Vişneli Brownie</span><span>190₺</span></div>
+                <div class="menu-item"><span>Glutensiz Karabuğdaylı Çikolatalı Brownie </span><span>240₺</span></div>
+                <div class="menu-item"><span>Glutensiz Çikolatalı Muffin</span><span>120₺</span></div>
+                <div class="menu-item"><span>Glutensiz San Sebastian</span><span>260₺</span></div>
+                <div class="menu-item"><span>Karabuğday Ekmeği (Dilim)</span><span>40₺</span></div>
+                <div class="menu-item"><span>Frambuazlı Cheesecake</span><span>250₺</span></div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Çorbalar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Mercimek Çorbası</span><span>140₺</span></div>
+                <div class="menu-item"><span>Ezogelin Çorbası</span><span>140₺</span></div>
+                <div class="menu-item"><span>Yayla Çorbası</span><span>140₺</span></div>
+                <div class="menu-item"><span>Köz Domates Çorbası</span><span>140₺</span></div>
+                <div class="menu-item"><span>Mantar Çorbası</span><span>140₺</span></div>
+                <div class="menu-item"><span>Tavuk Suyu Çorbası</span><span>140₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Granolalar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Meyveli Glutensiz Granola</span><span>270₺</span></div>
+                <div class="menu-item"><span>Granola</span><span>260₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Kahvaltılıklar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Express Kahvaltı</span><span>500₺</span></div>
+                <div class="menu-item"><span>Sahanda Sucuk</span><span>250₺</span></div>
+                <div class="menu-item"><span>Sucuklu Menemen</span><span>310₺</span></div>
+                <div class="menu-item"><span>Peynir Tabağı</span><span>350₺</span></div>
+                <div class="menu-item"><span>Söğüş Tabağı</span><span>185₺</span></div>
+                <div class="menu-item"><span>Sahanda Yumurta</span><span>180₺</span></div>
+                <div class="menu-item"><span>Sahanda Kavurmalı Yumurta</span><span>220₺</span></div>
+                <div class="menu-item"><span>Sade Omlet</span><span>240₺</span></div>
+                <div class="menu-item"><span>Kavurmalı Omlet</span><span>220₺</span></div>
+                <div class="menu-item"><span>Peynirli Omlet</span><span>270₺</span></div>
+                <div class="menu-item"><span>Menemen</span><span>240₺</span></div>
+                <div class="menu-item"><span>Kaşarlı Menemen</span><span>260₺</span></div>
+                <div class="menu-item"><span>Fit Pancake</span><span>325₺</span></div>
+                <div class="menu-item"><span>Kaşarlı Omlet</span><span>270₺</span></div>
+                <div class="menu-item"><span>Wellness Sporcu Omleti</span><span>280₺</span></div>
+                <div class="menu-item"><span>Peynirli Dereotlu Anne Poğaçası</span><span>45₺</span></div>
+                <div class="menu-item"><span>Simit</span><span>40₺</span></div>
+                <div class="menu-item"><span>Sahanda Sucuklu Yumurta</span><span>280₺</span></div>
+                <div class="menu-item"><span>Yumurtalı Sucuklu Omlet</span><span>300₺</span></div>
+                <div class="menu-item"><span>Karamelize Soğanlı Omlet</span><span>250₺</span></div>
+                <div class="menu-item"><span>Organik Yumurtalı Kavurmalı Omlet</span><span>280₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Salatalar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Sezar Salata</span><span>390₺</span></div>
+                <div class="menu-item"><span>Ton Balıklı Salata</span><span>390₺</span></div>
+                <div class="menu-item"><span>Kinoa Salatası</span><span>350₺</span></div>
+                <div class="menu-item"><span>Çıtır Tavuk Salatası</span><span>390₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Makarnalar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Köfteli Spaghetti</span><span>440₺</span></div>
+                <div class="menu-item"><span>Penne Arrabbiata</span><span>350₺</span></div>
+                <div class="menu-item"><span>Fettuccine Alfredo</span><span>395₺</span></div>
+                <div class="menu-item"><span>Fettuccine Sebzeli</span><span>360₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Burgerler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Cheeseburger</span><span>510₺</span></div>
+                <div class="menu-item"><span>Klasik Burger</span><span>495₺</span></div>
+                <div class="menu-item"><span>Tavuk Burger</span><span>395₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Bowllar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Sporcu Bowl</span><span>490₺</span></div>
+                <div class="menu-item"><span>Bomb Bowl</span><span>470₺</span></div>
+                <div class="menu-item"><span>Noodle & General Tso Chicken</span><span>420₺</span></div>
+                <div class="menu-item"><span>Burger Bowl</span><span>550₺</span></div>
+                <div class="menu-item"><span>Teriyaki Somon Bowl</span><span>590₺</span></div>
+                <div class="menu-item"><span>Kahvaltı Bowl</span><span>460₺</span></div>
+                <div class="menu-item"><span>Burrito Bowl</span><span>495₺</span></div>
+                <div class="menu-item"><span>Mücver Bowl</span><span>410₺</span></div>
+                <div class="menu-item"><span>Fit Bowl</span><span>470₺</span></div>
+                <div class="menu-item"><span>Tahıllı Bowl</span><span>440₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Wrapler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Tavuklu Wrap</span><span>420₺</span></div>
+                <div class="menu-item"><span>Sebzeli Wrap</span><span>370₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Sandviçler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Ton Balıklı Sandviç</span><span>250₺</span></div>
+                <div class="menu-item"><span>Izgara Tavuklu Sandviç</span><span>310₺</span></div>
+                <div class="menu-item"><span>Somon Füme Sandviç</span><span>390₺</span></div>
+                <div class="menu-item"><span>Klasik Peynirli Sandviç</span><span>190₺</span></div>
+                <div class="menu-item"><span>Klasik Kaşarlı Sandviç</span><span>190₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Tostlar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Bazlama Ekmeğine Kaşarlı Tost</span><span>240₺</span></div>
+                <div class="menu-item"><span>Bazlama Ekmeğine Karışık Tost</span><span>340₺</span></div>
+                <div class="menu-item"><span>Bazlama Ekmeğine Peynirli Tost</span><span>180₺</span></div>
+                <div class="menu-item"><span>Kaşarlı Tost</span><span>220₺</span></div>
+                <div class="menu-item"><span>Karışık Tost</span><span>290₺</span></div>
+                <div class="menu-item"><span>Kavurmalı Kaşarlı Bazlama Tost</span><span>350₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Tatlılar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Pekmezli Kurabiye</span><span>50₺</span></div>
+                <div class="menu-item"><span>Karamelize Soğanlı Kurabiye</span><span>40₺</span></div>
+                <div class="menu-item"><span>Fındıklı Kurabiye</span><span>30₺</span></div>
+                <div class="menu-item"><span>Kakaolu Kurabiye</span><span>30₺</span></div>
+                <div class="menu-item"><span>San Sebastian</span><span>250₺</span></div>
+                <div class="menu-item"><span>Limonlu Cheesecake</span><span>250₺</span></div>
+                <div class="menu-item"><span>Frambuazlı Cheesecake</span><span>250₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Vitamin Bar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Sarı Detox</span><span>180₺</span></div>
+                <div class="menu-item"><span>Turuncu Detox</span><span>180₺</span></div>
+                <div class="menu-item"><span>Yeşil Detox</span><span>180₺</span></div>
+                <div class="menu-item"><span>Taze Sıkma Portakal Suyu</span><span>150₺</span></div>
+                <div class="menu-item"><span>Taze Sıkma Havuç Suyu</span><span>145₺</span></div>
+                <div class="menu-item"><span>Taze Sıkma Elma Suyu</span><span>145₺</span></div>
+                <div class="menu-item"><span>Limonata</span><span>110₺</span></div>
+                <div class="menu-item"><span>Naneli Limonata</span><span>130₺</span></div>
+                <div class="menu-item"><span>Çilekli Limonata</span><span>130₺</span></div>
+                <div class="menu-item"><span>Elmalı Limonata</span><span>130₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Sıcak İçecekler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Salep</span><span>165₺</span></div>
+                <div class="menu-item"><span>Chai Tea Latte</span><span>165₺</span></div>
+                <div class="menu-item"><span>Sıcak Çikolata</span><span>190₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Sıcak Kahveler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Espresso</span><span>150₺</span></div>
+                <div class="menu-item"><span>Espresso Double</span><span>170₺</span></div>
+                <div class="menu-item"><span>Syphon Demleme Kahve</span><span>340₺</span></div>
+                <div class="menu-item"><span>Türk Kahvesi</span><span>145₺</span></div>
+                <div class="menu-item"><span>Double Türk Kahvesi</span><span>200₺</span></div>
+                <div class="menu-item"><span>Cafe Miel</span><span>200₺</span></div>
+                <div class="menu-item"><span>Filtre Kahve V60</span><span>390₺</span></div>
+                <div class="menu-item"><span>Americano</span><span>180₺</span></div>
+                <div class="menu-item"><span>Latte Macchiato</span><span>195₺</span></div>
+                <div class="menu-item"><span>Latte</span><span>195₺</span></div>
+                <div class="menu-item"><span>Flat White</span><span>195₺</span></div>
+                <div class="menu-item"><span>Cortado</span><span>180₺</span></div>
+                <div class="menu-item"><span>Mocha</span><span>210₺</span></div>
+                <div class="menu-item"><span>Chemex</span><span>390₺</span></div>
+                <div class="menu-item"><span>Affogato</span><span>210₺</span></div>
+                <div class="menu-item"><span>Cappuccino</span><span>195₺</span></div>
+                <div class="menu-item"><span>Zerdeçallı Latte</span><span>230₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Soğuk Kahveler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Frappe</span><span>185₺</span></div>
+                <div class="menu-item"><span>Ice Filtre Kahve</span><span>190₺</span></div>
+                <div class="menu-item"><span>Iced Americano</span><span>195₺</span></div>
+                <div class="menu-item"><span>Iced Latte</span><span>185₺</span></div>
+                <div class="menu-item"><span>Iced Mocha</span><span>230₺</span></div>
+                <div class="menu-item"><span>Iced Cookie Latte</span><span>250₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Medipoint Smoothieler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Avokado Smoothie</span><span>210₺</span></div>
+                <div class="menu-item"><span>Atom Smoothie</span><span>230₺</span></div>
+                <div class="menu-item"><span>Çilekli Smoothie</span><span>190₺</span></div>
+                <div class="menu-item"><span>Muzlu Smoothie</span><span>190₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Frozenlar</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Çilekli Frozen</span><span>180₺</span></div>
+                <div class="menu-item"><span>Mango Frozen</span><span>180₺</span></div>
+                <div class="menu-item"><span>Muzlu Frozen</span><span>180₺</span></div>
+                <div class="menu-item"><span>Karpuzlu Frozen</span><span>180₺</span></div>
+                <div class="menu-item"><span>Elmalı Frozen</span><span>180₺</span></div>
+                <div class="menu-item"><span>Kivili Frozen</span><span>180₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Milkshakeler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Çilekli Milkshake</span><span>190₺</span></div>
+                <div class="menu-item"><span>Çikolatalı Milkshake</span><span>190₺</span></div>
+                <div class="menu-item"><span>Muzlu Milkshake</span><span>190₺</span></div>
+                <div class="menu-item"><span>Karamelli Milkshake</span><span>190₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Wellness Bitki Çayları</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Melisa Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Çay</span><span>40₺</span></div>
+                <div class="menu-item"><span>Fincan Çay</span><span>60₺</span></div>
+                <div class="menu-item"><span>Blue Butterfly</span><span>170₺</span></div>
+                <div class="menu-item"><span>Ada Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Detox Çayı</span><span>170₺</span></div>
+                <div class="menu-item"><span>Ihlamur</span><span>150₺</span></div>
+                <div class="menu-item"><span>Kış Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Kuşburnu Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Nane Limon Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Papatya Çayı</span><span>150₺</span></div>
+                <div class="menu-item"><span>Yeşil Çay</span><span>150₺</span></div>
+                <div class="menu-item"><span>Avokadolu Karışık Çay</span><span>160₺</span></div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>İçecekler</h2>
+            <div class="menu-items">
+                <div class="menu-item"><span>Fanta</span><span>90₺</span></div>
+                <div class="menu-item"><span>Sprite</span><span>90₺</span></div>
+                <div class="menu-item"><span>Ayran</span><span>80₺</span></div>
+                <div class="menu-item"><span>Coca-Cola Zero Sugar</span><span>90₺</span></div>
+                <div class="menu-item"><span>Coca-Cola</span><span>90₺</span></div>
+                <div class="menu-item"><span>Soda</span><span>60₺</span></div>
+                <div class="menu-item"><span>Fuse Tea Limon</span><span>90₺</span></div>
+                <div class="menu-item"><span>Fuse Tea Şeftali</span><span>90₺</span></div>
+                <div class="menu-item"><span>Su</span><span>50₺</span></div>
+            </div>
+        </div>
+
+        <footer>
+            © Fiyatlara tüm vergiler dahildir | Fiyat değişim tarihi 29.03.2025
+        </footer>
+    </div>
+</body>
+</html>
