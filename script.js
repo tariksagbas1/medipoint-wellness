@@ -180,8 +180,8 @@ const menuData = [
       },
       {
         name: 'Karabuğday Ekmeği (Dilim)',
-        description: '70-80 gr. olarak servis edilir.',
-        price: '50',
+        description: '1 dilim ekşi mayalı Ciabatta ekmeği. (50gr)',
+        price: '60',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/69442172.jpg??width=400'
       },
       {
