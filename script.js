@@ -79,7 +79,7 @@ const menuData = [
       },
       {
         name: 'Glutensiz Karabuğday Tavuk Burger',
-        description: '100gr. Izgara tavuk, karamelize soğan, cheddar peyniri, domates, salatalık turşusu',
+        description: '100gr. Izgara tavuk, karamelize soğan, cheddar peyniri, domates ve salatalık turşusu',
         price: '500',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67510776.jpg??width=400'
       },
