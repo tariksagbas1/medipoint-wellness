@@ -91,7 +91,7 @@ const menuData = [
       },
       {
         name: 'Glutensiz Karabuğday Sucuklu 3 Peynirli Tost',
-        description: 'Glutensiz karabuğday ekmeğine; 45gr 100% dana eti Kayseri sucuk, İzmir tulum peyniri, beyaz peynir',
+        description: 'Glutensiz karabuğday ekmeğine 45gr 100% dana eti Kayseri sucuk, İzmir tulum peyniri, beyaz peynir',
         price: '380',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67626100.jpg??width=400'
       },
