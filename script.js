@@ -85,7 +85,7 @@ const menuData = [
       },
       {
         name: 'Glutensiz Margherita Pizza',
-        description: 'Domates sosu, mozzarella peyniri, fesleğen',
+        description: 'Domates sosu, mozzarella peyniri üstünde fesleğen',
         price: '410',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66969940.jpg??width=400'
       },
