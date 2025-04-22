@@ -194,7 +194,7 @@ const menuData = [
         name: 'Limonlu Cheesecake',
         description: 'Glutensizdir. Dilim olarak servis edilir.',
         price: '270',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745322347/IMG_6276_fnxgjc.jpg'
       }
     ]
   },
@@ -205,37 +205,37 @@ const menuData = [
         name: 'Mercimek Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336715/PHOTO-2025-03-02-13-40-00_hs3quh.jpg'
       },
       {
         name: 'Ezogelin Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336431/PHOTO-2025-03-22-12-43-28_q8j3kd.jpg'
       },
       {
         name: 'Yayla Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336679/PHOTO-2025-03-03-12-08-51_u8cjqj.jpg'
       },
       {
         name: 'Köz Domates Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336475/PHOTO-2025-03-07-14-02-10_hpbywo.jpg'
       },
       {
         name: 'Mantar Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336566/PHOTO-2025-03-06-13-58-54_yu9rwz.jpg'
       },
       {
         name: 'Tavuk Suyu Çorbası',
         description: '',
         price: '140',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336640/PHOTO-2025-03-04-13-31-36_cgiwra.jpg'
       },
     ]
   },
@@ -441,25 +441,25 @@ const menuData = [
         name: 'Izgara Tavuklu Sandviç',
         description: 'Nefis sandviç ekmeğine 200gr ızgara tavuk but',
         price: '330',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27796905.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336167/IMG_6309_gptffn.jpg'
       },
       {
         name: 'Somon Füme Sandviç',
         description: 'Nefis sandviç ekmeğine; 80gr füme somon, roka, turşu, kırmızı soğan',
         price: '390',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/30220502.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336091/IMG_6299_1_reaahr.jpg'
       },
       {
-        name: 'Klasik Peynirli Sandviç',
+        name: 'Klasik Beyaz Peynirli Sandviç',
         description: 'Nefis sandviç ekmeğine; Ezine beyaz peynir, yeşillik, domates, salatalık',
         price: '190',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/32786376.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336167/IMG_6317_rw83rp.jpg'
       },
       {
         name: 'Klasik Kaşarlı Sandviç',
         description: 'Nefis sandviç ekmeğine; Ezine beyaz peynir, yeşillik, domates, salatalık',
         price: '190',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/32786380.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336166/IMG_6306_khneqf.jpg'
       }
     ]
   },
@@ -576,7 +576,7 @@ const menuData = [
         name: 'Tavuk Burger',
         description: '100gr Izgara tavuk, cheddar peyniri, karamelize soğan, domates, salatalık turşusu, marul',
         price: '395',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/67510753.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745336271/IMG_6262_fqhl6r.jpg'
       }
     ]
   },
@@ -587,13 +587,13 @@ const menuData = [
         name: 'Margherita Pizza',
         description: '',
         price: '390',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745322498/IMG_6203_ykpegb.jpg'
       },
       {
         name: 'Sucuk Sever Pizza',
         description: '',
         price: '440',
-        photo_url: ''
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745322530/IMG_6217_tg5njs.jpg'
       },
       {
         name: 'Anadolu Ateşi Pizza',
@@ -686,7 +686,7 @@ const menuData = [
         name: 'Limonlu Cheesecake',
         description: 'Dilim olarak servis edilir.',
         price: '270',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66379998.jpg??width=800'
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1745322347/IMG_6276_fnxgjc.jpg'
       },
       {
         name: 'Frambuazlı Cheesecake',
