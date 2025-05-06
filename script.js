@@ -718,6 +718,12 @@ const menuData = [
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801448.jpg??width=800'
       },
       {
+        name: 'Mor İksir',
+        description: 'Doğal antioksidan mor aronya, soda, limon, bal karışmı',
+        price: '210',
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1746552371/PHOTO-2025-05-06-10-50-28_dddbrm.jpg'
+      },
+      {
         name: 'Taze Sıkma Portakal Suyu',
         description: 'Soğuk servis edilir.',
         price: '190',
