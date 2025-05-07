@@ -1322,3 +1322,12 @@ function showItemModal(photoUrl, name, description, price) {
     modal.style.display = 'flex';
   }
 }
+
+function showMenu() {
+  let menu = document.getElementsByClassName("container")[0];
+  let buttons = document.getElementsByClassName("buttons-div")[0];
+  let subheading = document.getElementsByClassName("subheading")[0];
+  subheading.style.display = 'block';
+  buttons.style.display = 'none';
+  menu.style.display = 'block';
+}
