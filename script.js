@@ -1330,4 +1330,5 @@ function showMenu() {
   subheading.style.display = 'block';
   buttons.style.display = 'none';
   menu.style.display = 'block';
+  console.log("EADS");
 }
