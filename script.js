@@ -371,13 +371,13 @@ const menuData = [
         name: 'Yumurtalı Sucuklu Omlet',
         description: '45gr 100% dana eti Kayseri sucuğu, yumurta. Domates, salatalık, mevsim yeşillikleri ile',
         price: '290',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66231015.jpg??width=800'
+        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66825305.jpg??width=800'
       },
       {
         name: 'Karamelize Soğanlı Omlet',
         description: 'Yumurta, karamelize soğan',
         price: '270',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66825305.jpg??width=800'
+        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66231015.jpg??width=800'
       },
       {
         name: 'Organik Yumurtalı Kavurmalı Omlet',
@@ -700,28 +700,28 @@ const menuData = [
     name: 'Vitamin Bar',
     items: [
       {
-        name: 'Sarı Detox',
+        name: 'Gün Işığı',
         description: 'Limon, portakal, dereotu, salatalık. 350ml',
         price: '210',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801136.jpg??width=800'
       },
       {
-        name: 'Turuncu Detox',
+        name: 'Gün Batımı',
         description: 'Portakal suyu, havuç suyu, taze zencefil, limon. 350ml',
         price: '210',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801157.jpg??width=800'
       },
       {
-        name: 'Yeşil Detox',
+        name: 'Yeşil Enerji',
         description: 'Elma, salatalık, maydanoz, taze zencefil. 350ml',
         price: '210',
         photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27801448.jpg??width=800'
       },
       {
-        name: 'Mor İksir',
-        description: 'Doğal antioksidan mor aronya, soda, limon, bal karışmı',
-        price: '210',
-        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1746552371/PHOTO-2025-05-06-10-50-28_dddbrm.jpg'
+        name: 'Reyhan Şerbeti',
+        description: '',
+        price: '175',
+        photo_url: ''
       },
       {
         name: 'Taze Sıkma Portakal Suyu',
@@ -974,44 +974,33 @@ const menuData = [
     ]
   },
   {
-    name: 'Frozenlar',
+    name: 'Mocktail',
     items: [
       {
-        name: 'Çilekli Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/27800017.jpg??width=800'
+        name: 'Mor İksir',
+        description: 'Doğal antioksidan mor aronya, soda, limon, bal karışmı',
+        price: '210',
+        photo_url: 'https://res.cloudinary.com/drl9vhsmj/image/upload/v1746552371/PHOTO-2025-05-06-10-50-28_dddbrm.jpg'
       },
       {
-        name: 'Mango Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66881307.jpg??width=800'
+        name: 'Cocofresh',
+        description: 'hindistan cevizi sütü, nane, portakal, limon. (350ml)',
+        price: '210',
+        photo_url: ''
       },
       {
-        name: 'Muzlu Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66883998.jpg??width=800'
+        name: 'Summer Sun',
+        description: 'Limon, soda, organik zencefil özü, nane. (350ml)',
+        price: '210',
+        photo_url: ''
       },
       {
-        name: 'Karpuzlu Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963749.jpg??width=800'
+        name: 'Butterfly',
+        description: '',
+        price: '210',
+        photo_url: ''
       },
-      {
-        name: 'Elmalı Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963790.jpg??width=800'
-      },
-      {
-        name: 'Kivili Frozen',
-        description: 'Soğuk servis edilir. 350ml',
-        price: '180',
-        photo_url: 'https://images.deliveryhero.io/image/fd-tr/Products/66963812.jpg??width=800'
-      }
+
     ]
   },
   {
