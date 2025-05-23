@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe Menu Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Yeni Ürün Ekle</h2>
+<form id="menuForm" enctype="multipart/form-data">
+  <label>Ürün İsmi</label>
+  <input type="text" name="name" required />
+
+  <label>Açıklama</label>
+  <textarea name="description" required></textarea>
+
+  <label>Fiyat</label>
+  <input type="text" name="price" required />
+
+  <label>Kategori</label>
+  <select name="category" required>
+    <option value="">-- Kategori Seçin --</option>
+    <option value="Glutensiz Yemekler">Glutensiz Yemekler</option>
+    <option value="Glutensiz Ürünler">Glutensiz Ürünler</option>
+    <option value="Çorbalar">Çorbalar</option>
+    <option value="Granolalar">Granolalar</option>
+    <option value="Kahvaltılıklar">Kahvaltılıklar</option>
+    <option value="Tostlar">Tostlar</option>
+    <option value="Sandviçler">Sandviçler</option>
+    <option value="Salatalar">Salatalar</option>
+    <option value="Bowllar">Bowllar</option>
+    <option value="Burgerler">Burgerler</option>
+    <option value="Pizzalar">Pizzalar</option>
+    <option value="Wrapler">Wrapler</option>
+    <option value="Makarnalar">Makarnalar</option>
+    <option value="Tatlılar">Tatlılar</option>
+    <option value="Vitamin Bar">Vitamin Bar</option>
+    <option value="Sıcak İçecekler">Sıcak İçecekler</option>
+    <option value="Sıcak Kahveler">Sıcak Kahveler</option>
+    <option value="Soğuk Kahveler">Soğuk Kahveler</option>
+    <option value="Medipoint Smoothieler">Medipoint Smoothieler</option>
+    <option value="Mocktailler">Mocktailler</option>
+    <option value="Milkshakeler">Milkshakeler</option>
+    <option value="Wellness Bitki Çayları">Wellness Bitki Çayları</option>
+    <option value="İçecekler">İçecekler</option>
+  </select>
+
+  <label>Fotoğraf</label>
+  <input type="file" name="photo" accept="image/*" required />
+
+  <label>İmza</label>
+  <input type="text" name="signature">
+
+  <button type="submit">Gönder</button>
+</form>
+
+<div id="status"></div>
+<script src="admin.js"></script>
+</body>
+</html>
