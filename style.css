@@ -454,3 +454,11 @@ input[type="file"]::-webkit-file-upload-button {
   cursor: pointer;
   margin-right: 1rem;
 }
+@media (min-width: 768px) {
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    justify-content: start;  /* align the grid tracks at the start */
+    gap: 0.7rem;
+  }
+}
