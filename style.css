@@ -296,7 +296,12 @@ p {
   cursor: pointer;
   color: var(--text-color);
 }
-
+.category-subtitle {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
 .menu-item {
   cursor: pointer;
 }

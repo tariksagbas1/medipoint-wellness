@@ -37,6 +37,7 @@ function renderMenu() {
   menuCategories.innerHTML = menuData.map(category => `
     <section class="category" id="${category.name.replace(/\s+/g, '-')}">
       <h2>${category.name}</h2>
+      ${category.name === 'Çorbalar' ? '<div class="category-subtitle">(Çorba çeşitleri günlük olarak değişmektedir.)</div>' : ''}
       <div class="menu-items">
         ${category.items.map(item => `
           <div class="menu-item" onclick="showItemModal('${item.photo_url}', '${item.name}', '${item.description}', '${item.price}')">
