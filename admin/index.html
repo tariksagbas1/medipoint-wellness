@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Yönetim · Medipoint Wellness</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f3f5ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/admin.css" />
+    <script type="module" src="/assets/js/admin.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+
+    <!-- Boot: shown until the session check finishes -->
+    <div class="view view--center" id="view-boot">
+      <div class="boot" aria-label="Yükleniyor"><span></span><span></span><span></span></div>
+    </div>
+
+    <!-- Sign in -->
+    <main class="view view--center" id="view-login" hidden>
+      <form class="auth" id="login-form" novalidate>
+        <a class="auth__back" href="/">← Menüye dön</a>
+        <div class="auth__brand">
+          <img src="/favicon.svg" alt="" width="44" height="44" />
+          <div>
+            <h1 class="auth__title">Menü yönetimi</h1>
+            <p class="auth__sub">Supabase hesabınızla giriş yapın.</p>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="login-email">E-posta</label>
+          <input class="input" id="login-email" name="email" type="email" autocomplete="username" required />
+          <p class="field__error" id="login-email-error"></p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="login-password">Şifre</label>
+          <input class="input" id="login-password" name="password" type="password" autocomplete="current-password" required />
+          <p class="field__error" id="login-password-error"></p>
+        </div>
+        <p class="auth__error" id="login-error" role="alert"></p>
+        <button class="btn btn--primary auth__submit" type="submit">Giriş yap</button>
+      </form>
+    </main>
+
+    <!-- Signed in but not an admin -->
+    <main class="view view--center" id="view-denied" hidden>
+      <div class="auth">
+        <h1 class="auth__title">Yetki gerekli</h1>
+        <p class="auth__sub">
+          <strong id="denied-email"></strong> hesabı yönetici listesinde yok. Supabase SQL Editor'da
+          şu komutu çalıştırıp tekrar deneyin:
+        </p>
+        <pre class="code" id="denied-sql"></pre>
+        <div class="auth__row">
+          <button class="btn btn--primary" type="button" data-action="recheck">Tekrar kontrol et</button>
+          <button class="btn btn--ghost" type="button" data-action="signout">Çıkış yap</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Dashboard -->
+    <div class="app" id="view-app" hidden>
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="topbar__brand" href="/" title="Menüyü görüntüle">
+            <img src="/favicon.svg" alt="" width="32" height="32" />
+            <span>Medipoint <em>yönetim</em></span>
+          </a>
+          <nav class="tabs" aria-label="Bölümler" role="tablist">
+            <button class="tabs__tab" role="tab" type="button" data-tab="items" aria-selected="true">Ürünler</button>
+            <button class="tabs__tab" role="tab" type="button" data-tab="categories" aria-selected="false">Kategoriler</button>
+            <button class="tabs__tab" role="tab" type="button" data-tab="settings" aria-selected="false">Ayarlar</button>
+          </nav>
+          <div class="topbar__user">
+            <span class="topbar__email" id="user-email"></span>
+            <button class="btn btn--sm btn--ghost" type="button" data-action="signout">Çıkış</button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main" class="workspace" tabindex="-1">
+        <!-- Items -->
+        <section class="panel" id="tab-items" role="tabpanel" aria-label="Ürünler">
+          <div class="panel__head">
+            <div>
+              <h1 class="panel__title">Ürünler</h1>
+              <p class="panel__sub" id="items-summary"></p>
+            </div>
+            <button class="btn btn--primary" type="button" data-action="new-item">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+              Yeni ürün
+            </button>
+          </div>
+          <div class="filters">
+            <label class="filters__search">
+              <span class="visually-hidden">Ürün ara</span>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="m13.5 13.5 3.5 3.5"/></svg>
+              <input class="input" id="items-search" type="search" placeholder="Ürün ara" autocomplete="off" />
+            </label>
+            <label class="visually-hidden" for="items-category">Kategori filtresi</label>
+            <select class="input" id="items-category">
+              <option value="">Tüm kategoriler</option>
+            </select>
+            <label class="visually-hidden" for="items-status">Durum filtresi</label>
+            <select class="input" id="items-status">
+              <option value="">Tüm durumlar</option>
+              <option value="available">Menüde</option>
+              <option value="hidden">Gizli</option>
+              <option value="no-photo">Fotoğrafsız</option>
+            </select>
+          </div>
+          <div id="items-list" class="item-groups" aria-live="polite"></div>
+        </section>
+
+        <!-- Categories -->
+        <section class="panel" id="tab-categories" role="tabpanel" aria-label="Kategoriler" hidden>
+          <div class="panel__head">
+            <div>
+              <h1 class="panel__title">Kategoriler</h1>
+              <p class="panel__sub">Sırayı oklarla değiştirin. Değişiklikler alan dışına çıkınca kaydedilir.</p>
+            </div>
+          </div>
+          <form class="cat-new" id="category-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="category-name">Yeni kategori</label>
+              <input class="input" id="category-name" name="name" placeholder="Örn. Tatlılar" required maxlength="80" />
+              <p class="field__error" id="category-name-error"></p>
+            </div>
+            <button class="btn btn--primary" type="submit">Ekle</button>
+          </form>
+          <ol class="cat-list" id="category-list"></ol>
+        </section>
+
+        <!-- Settings -->
+        <section class="panel" id="tab-settings" role="tabpanel" aria-label="Ayarlar" hidden>
+          <div class="panel__head">
+            <div>
+              <h1 class="panel__title">Ayarlar</h1>
+              <p class="panel__sub">Menü sayfasının altındaki bilgiler ve bağlantılar.</p>
+            </div>
+          </div>
+          <div class="settings-grid">
+            <form class="card" id="settings-form" novalidate>
+              <h2 class="card__title">Sayfa bilgileri</h2>
+              <div class="field">
+                <label class="field__label" for="s-price-note">Fiyat notu</label>
+                <input class="input" id="s-price-note" name="price_note" maxlength="160" />
+              </div>
+              <div class="field">
+                <label class="field__label" for="s-prices-date">Fiyat güncelleme tarihi</label>
+                <div class="input-row">
+                  <input class="input" id="s-prices-date" name="prices_updated_on" type="date" />
+                  <button class="btn" type="button" data-action="today">Bugün</button>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="s-reviews">Google yorumları bağlantısı</label>
+                <input class="input" id="s-reviews" name="reviews_url" type="url" inputmode="url" placeholder="https://" />
+                <p class="field__error" id="s-reviews-error"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="s-instagram">Instagram bağlantısı</label>
+                <input class="input" id="s-instagram" name="instagram_url" type="url" inputmode="url" placeholder="https://instagram.com/…" />
+                <p class="field__error" id="s-instagram-error"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="s-phone">Telefon</label>
+                <input class="input" id="s-phone" name="phone" type="tel" placeholder="+90 …" />
+              </div>
+              <div class="field">
+                <label class="field__label" for="s-address">Adres</label>
+                <textarea class="input" id="s-address" name="address" rows="2"></textarea>
+              </div>
+              <div class="card__actions">
+                <button class="btn btn--primary" type="submit">Kaydet</button>
+              </div>
+            </form>
+
+            <div class="card">
+              <h2 class="card__title">Fotoğrafları depoya taşı</h2>
+              <p class="card__text">
+                Eski menüden gelen fotoğraflar hâlâ Cloudinary ve Yemeksepeti sunucularında duruyor.
+                Bu işlem onları <code>menu-items</code> deposuna kopyalar, böylece o bağlantılar kırılsa
+                bile fotoğraflar yerinde kalır.
+              </p>
+              <p class="card__text" id="import-status"></p>
+              <div class="progress" id="import-progress" hidden><span></span></div>
+              <div class="card__actions">
+                <button class="btn" type="button" data-action="import-images">Aktarmayı başlat</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Item editor (slide-over) -->
+    <dialog class="drawer" id="item-drawer" aria-labelledby="drawer-title">
+      <form class="drawer__form" id="item-form" novalidate>
+        <header class="drawer__head">
+          <h2 class="drawer__title" id="drawer-title">Yeni ürün</h2>
+          <button class="btn btn--icon btn--ghost" type="button" data-close aria-label="Kapat">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 8 8M14 6l-8 8"/></svg>
+          </button>
+        </header>
+
+        <div class="drawer__body">
+          <div class="field">
+            <span class="field__label" id="photo-label">Fotoğraf</span>
+            <div class="photo" id="photo-drop" aria-labelledby="photo-label">
+              <img class="photo__preview" id="photo-preview" alt="" hidden />
+              <div class="photo__empty" id="photo-empty">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>
+                <p><strong>Fotoğraf seçin</strong> ya da buraya sürükleyin</p>
+                <p class="field__hint">JPG, PNG veya WebP. Yüklemeden önce otomatik küçültülür.</p>
+              </div>
+              <input class="photo__input" id="photo-input" type="file" accept="image/jpeg,image/png,image/webp,image/avif" />
+            </div>
+            <div class="photo__actions">
+              <label class="btn btn--sm" for="photo-input">Fotoğraf seç</label>
+              <button class="btn btn--sm btn--ghost" type="button" id="photo-remove" hidden>Fotoğrafı kaldır</button>
+            </div>
+            <p class="field__error" id="photo-error"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-name">Ürün adı</label>
+            <input class="input" id="f-name" name="name" required maxlength="140" />
+            <p class="field__error" id="f-name-error"></p>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label class="field__label" for="f-category">Kategori</label>
+              <select class="input" id="f-category" name="category_id" required></select>
+              <p class="field__error" id="f-category-error"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-price">Fiyat (₺)</label>
+              <input class="input input--num" id="f-price" name="price" inputmode="decimal" required placeholder="0" />
+              <p class="field__error" id="f-price-error"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-description">Açıklama</label>
+            <textarea class="input" id="f-description" name="description" rows="4" maxlength="1000" placeholder="İçindekiler, porsiyon, servis şekli"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label class="field__label" for="f-calories">Kalori (kcal)</label>
+              <input class="input input--num" id="f-calories" name="calories" inputmode="numeric" placeholder="Opsiyonel" />
+              <p class="field__error" id="f-calories-error"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-sort">Sıra</label>
+              <input class="input input--num" id="f-sort" name="sort_order" inputmode="numeric" placeholder="Otomatik" />
+              <p class="field__hint">Küçük sayı önce gösterilir.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-allergens">Alerjen bilgisi</label>
+            <input class="input" id="f-allergens" name="allergens" maxlength="200" placeholder="Örn. Süt ürünleri ve yumurta içerir" />
+          </div>
+
+          <div class="toggles">
+            <label class="switch">
+              <input type="checkbox" id="f-available" name="is_available" checked />
+              <span class="switch__track"></span>
+              Menüde göster
+            </label>
+            <label class="switch">
+              <input type="checkbox" id="f-celiac" name="not_celiac_safe" />
+              <span class="switch__track"></span>
+              Çölyak hastaları için uygun değil uyarısı
+            </label>
+          </div>
+          <p class="form-error" id="item-form-error" role="alert"></p>
+        </div>
+
+        <footer class="drawer__foot">
+          <button class="btn btn--ghost drawer__delete" type="button" data-action="delete-item" hidden>Sil</button>
+          <span class="drawer__spacer"></span>
+          <button class="btn" type="button" data-close>Vazgeç</button>
+          <button class="btn btn--primary" type="submit" id="item-save">Kaydet</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <!-- Confirm -->
+    <dialog class="confirm" id="confirm-dialog" aria-labelledby="confirm-title">
+      <form method="dialog" class="confirm__body">
+        <h2 class="confirm__title" id="confirm-title"></h2>
+        <p class="confirm__text" id="confirm-text"></p>
+        <div class="confirm__actions">
+          <button class="btn" value="cancel" type="submit">Vazgeç</button>
+          <button class="btn btn--danger" value="ok" type="submit" id="confirm-ok">Sil</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
