@@ -4,7 +4,7 @@
 //
 // Set SUPABASE_URL to your project's API URL
 // (Supabase dashboard → Project Settings → Data API → Project URL).
-export const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
+export const SUPABASE_URL = "https://qdwrildlfpmbjglegkqp.supabase.co";
 export const SUPABASE_ANON_KEY = "sb_publishable_-0mxoNyTPaJQwjLCGBZV3g_6qirYBPV";
 
 export const STORAGE_BUCKET = "menu-items";
